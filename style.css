@@ -1,5 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 .cells {
     background-color: black;
-    height: 10px;
-    width: 10px;
+    height: 30px;
+    width: 30px;
+    border: 1px solid white;
+}
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'VT323', monospace;
+}
+.canvas {
+    padding: 25px;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
+}
+.header {
+    padding: 24px;
+    font-size: 40px;
 }
