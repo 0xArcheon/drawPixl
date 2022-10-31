@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
-.cells {
-    background-color: black;
-    height: 30px;
-    width: 30px;
-    border: 1px solid white;
-}
+/* 
+    retro light blue #C2E5E1
+    retro beige #FEF8EC
+    retro black #2F302B
+*/
 body {
+    background-color: #FEF8EC;
     margin: 0;
     display: flex;
     justify-content: center;
@@ -13,9 +13,23 @@ body {
     flex-direction: column;
     font-family: 'VT323', monospace;
 }
+.cells {
+    background-color: white;
+    height: 30px;
+    width: 30px;
+    border: 1px solid #2F302B;
+}
+.drawn {
+    background-color: #2F302B;
+}
+
 .canvas {
-    padding: 25px;
+    padding: 45px;
+    border: 3px solid #2F302B;
+    border-radius: 16px;
+    background-color: #C2E5E1;
     display: grid;
+    box-shadow: 15px 15px #2F302B;
     grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
 }
 .header {

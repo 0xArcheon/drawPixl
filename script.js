@@ -6,5 +6,13 @@ let createGrid = ()=> {
         cells.classList.add("cells");
         canvas.appendChild(cells);
         }   
-}
+};
 createGrid();
+
+let draw = () => {
+    let cells = document.querySelectorAll(".cells");
+    cells.addEventListener("mouseover", ()=> {
+        cells.classList.add("drawn");
+    });
+}
+draw();
