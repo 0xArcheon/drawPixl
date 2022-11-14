@@ -5,14 +5,13 @@ let createGrid = ()=> {
         let cells = document.createElement("div");
         cells.classList.add("cells");
         canvas.appendChild(cells);
-        }   
+        }
 };
 createGrid();
 
 let draw = () => {
-    let cells = document.querySelectorAll(".cells");
-    cells.addEventListener("mouseover", ()=> {
-        cells.classList.add("drawn");
-    });
-}
+    let cellElements = document.querySelectorAll(".cells");
+    cellElements.forEach(cell => cell.addEventListener("mouseover",function () {
+        cell.classList.add("drawn")}));
+};
 draw();
